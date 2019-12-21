@@ -1,27 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
+    background-image: url(Assets/full-bloom.png);
+
 }
 
-.header {
+header {
     background-color: rgb(202,149,90);
-    border-width: 5px;
-    border-color: rgb(149,64,82);
-    border-style: solid;
+    /* border-bottom: 5px solid rgb(149,64,82); */
     height: 100px;
-    width: 900px;
+    width: 100%;
     position: fixed;
     padding: 20px;
     align-self: center;
-    left: 4%;
     z-index: 1;
 }
 
-#name {
-    background-color: 	rgb(203,204,171);
+.logo {
+    background-color: 	rgb(202,149,90);
     color: 	rgb(149,64,82);
-    font-size: large;
+    font-size: 30px;
     text-align: center;
     padding: 10px;
     float: left;
@@ -30,89 +33,87 @@ body {
     position: relative;
     left: 20px;
     font-weight: bold;
-    
+    text-decoration: none;
 }
 
-#navbar {
-    background-color: rgb(184,105,84);
+nav {
     float: right;
-    height: 80px;
-    width: 500px;
-    position: relative;
-    top: 11px;
-    right: 20px;
+    font-size: 18px;
+    padding: 12px 10px 0 10px;
+    margin-right: -180px;
 }
-
-.about {
-    color: 	rgb(149,64,82);
-    font-size: medium;
+  
+nav a {
+    text-decoration: none;
+    color: #666;
+    padding: 2px 20px;
+    border-right: 1px solid #666;
     text-align: center;
-    padding: 20px;
-    border-color: 	rgb(149,64,82);
-    border-style: dashed;
-    border-width: 1px;
-    width: 90px;
-    position: relative;
-    left: 20px;
-    top: 10px;
-
+    font-size: 20px;
+}
+  
+nav a:last-child {
+    border-right: none;
 }
 
-.portfolio {
-    color: 	rgb(149,64,82);
-    font-size: medium;
-    text-align: center;
-    padding: 20px;
-    border-color: 	rgb(149,64,82);
-    border-style: dashed;
-    border-width: 1px;
-    position: relative;
-    width: 90px;
-    left: 185px;
-    top: -49px;
-}
-
-.contact {
-    color: 	rgb(149,64,82);
-    font-size: medium;
-    text-align: center;
-    padding: 20px;
-    border-color: 	rgb(149,64,82);
-    border-style: dashed;
-    border-width: 1px;
-    width: 90px;
-    position: relative;
-    left: 70%;
-    top: -110px;
-    
-}
-
-.main {
+.container {
     width: 960px;
-    background-color: 	rgb(184,105,84);
+    clear: both;
+}
+
+.main-container {
+    /* width: 100%; */
+    color: #777;
+    background-image: url(Assets/full-bloom.png);
+    line-height: 30px;
+    /* border: 1px gray solid; */
+    font-size: 12px;
+    /* height: calc(100vh - 210px); */
+    overflow: auto;
+    padding-left: 40px;
+    margin-top: 80px;
+    margin-left: 10%;
+}
+
+.main-container h1 {
+    font-size: 22px;
+    color: #4aaaa5;
+    padding: 10px 0;
+    border-bottom: 2px solid #dedede;
+}
+  
+.main-container img {
+    width: 250px;
+    float: left;
+    margin-right: 30px;
+    margin-top: 10px;
+    /* margin-bottom: 30px; */
+}
+  
+.main-container p {
+    color: #777;
+    line-height: 30px;
+    font-size: 18px;
+}
+main {
+    width: 960px;
+    background-image: url(Assets/full-bloom.png);
     font-size: small;
     padding: 30px;
-    border-color: 	rgb(149,64,82);
-    border-width: 1px;
-    border-style: solid;
-    z-index: 0;
+    /* z-index: 0; */
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+    /* min-height: calc(100vh - 90px); */
 }
-.container {
-    background-color: rgb(203,204,171);
-    color: black;
-    border-width: 1px;
-    border-color: 	rgb(149,64,82);
-    border-style: dotted;
-    width: 960px;
-}
-.footer {
-    background-color: rgb(202,149,90);
-    padding: 10px;
-    height: 20px;
-    color: 	rgb(149,64,82);
-    width: 1002px;
-    position: relative; 
-    left: 0;
-    text-align: center;
 
+footer {
+    background-color: rgb(202,149,90);
+    padding: 20px;
+    height: 30px;
+    color: #777;
+    width: 100%;
+    position: fixed; 
+    bottom: 0;
+    text-align: center;
+    border-top: 6px solid rgb(149,64,82);
 }
