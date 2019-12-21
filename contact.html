@@ -2,8 +2,12 @@
 <html>
     <head>
         <title>Rachel Humble Professional Website</title>
-        <link href=styles.css rel="stylesheet">
+        <link href="styles/reset.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <link href="styles/masterstyles.css" rel="stylesheet">
+        <link href="styles/specialstyles.css" rel="stylesheet">
         </head>
 
     <body>
@@ -22,24 +26,27 @@
         <section class="container main-container">
                 <h1>Contact Me</h1>
                 <br>
-                <h2>
-                    <address>
-                        Email me: <a href="mailto:rachelhumble@me.com">rachelhumble@me.com</a>
-                    </address>
-                    <br>
-                    Phone: (828) 551-2812
-                    <br><br>
-                    Address: <br>
-                    203 E. Lynch St, Apt A <br>
-                    Durham, NC 27701
-                    <br><br><br>
-                    <a href="https://www.linkedin.com/in/rachel-humble-08b599109/" target="_blank">LinkedIn</a>
-                </h2>
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Name</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Jane Doe">
+                      
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Email</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
         </section>
     </main>
-        
+        <br><br><br>
     <footer>
-        <section class="container">
+        <section class="container footer-container">
             Copyright &copy Rachel Humble
         </section>
     </footer>    

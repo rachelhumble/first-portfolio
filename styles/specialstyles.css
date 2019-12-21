@@ -1,0 +1,72 @@
+nav {
+    float: right;
+    font-size: 18px;
+    padding: 12px 10px 0 10px;
+    margin-right: -100px;
+}
+
+.logo {
+    background-color: 	rgb(202,149,90);
+    color: 	rgb(149,64,82);
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    height: 70px;
+    width: 250px;
+    position: relative;
+    left: -162px;
+    top: -2px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.row {
+    margin-left: 5px;
+}
+
+img {
+    border-radius: 5px; 
+    border: gray 1px;
+    height: 200px;
+    width: 30px;
+}
+
+h4 {
+    background-color: rgb(202,149,90);
+    color: 	rgb(149,64,82);
+    font-size: 24px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 5px;
+    height: 50px;
+    width: 250px;
+    position: relative;
+    float: right;
+    top: -55px;
+    right: 25px;
+}
+
+.form-control:focus {
+    border-color: rgb(202,149,90);
+    box-shadow: 0 0 0 0.2rem rgba(202,149,90);
+}
+
+.btn-primary {
+    background-color: rgb(202,149,90);
+    color: rgb(149,64,82);
+    border-color: rgb(202,149,90);
+}
+
+.btn-primary:hover {
+    background-color: rgb(149,64,82);
+    color: rgb(202,149,90);
+    border-color: rgb(149,64,82);
+}
+
+.btn-primary:focus {
+    background-color: rgb(149,64,82);
+    color: rgb(202,149,90);
+    border-color: rgb(149,64,82);
+    box-shadow: 0 0 0 0.2rem rgba(149,64,82);
+}
