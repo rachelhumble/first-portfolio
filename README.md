@@ -1,5 +1,5 @@
-# rachelhumble.github.io
-Personal Portfolio Page
+# Personal Portfolio Page
+First attempt at portfolio for bootcamp hw
 
 Notes:
 I chose to set fix the header instead of the footer because to me it seemed more important to have the navigation options available at any point. I also preferred the look of only seeing the footer once you've reached the bottom of the page.
